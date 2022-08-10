@@ -6,11 +6,13 @@
 #include<math.h>
 int main(){
 	setbuf(stdout,NULL);
-	int number;
+	int number,perfect_number;
 	printf("enter the number ");
 	scanf("%d",&number);
 	if(number>=0){
-		if(sqrt(number)*sqrt(number) == number){
+		perfect_number = (int)sqrt(number)*sqrt(number);
+
+		if(perfect_number == number){
 			printf("%d is a perfect number ",number);
 		}
 		else{
@@ -21,4 +23,3 @@ int main(){
 		printf("number is negative");
 	}
 }
-
