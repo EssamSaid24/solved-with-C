@@ -5,7 +5,7 @@ int count1s(unsigned int num)
     unsigned char i;
     int count=0;
 
-    unsigned char totalBits=sizeof(num);
+    unsigned char totalBits=sizeof(num)*8;
 
 
     for(i=0;i< totalBits;i++)
